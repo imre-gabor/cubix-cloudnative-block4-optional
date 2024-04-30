@@ -3,9 +3,17 @@ kind: Deployment
 metadata:
   name: frontend
   namespace: op4-kube-frontend
+  labels:
+    app: frontapp
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: frontapp
   template:
+    metadata:
+      labels:
+        app: frontapp
     spec:
       containers:
       - name: frontend

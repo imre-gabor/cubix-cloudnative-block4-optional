@@ -4,6 +4,8 @@ metadata:
   name: frontend
   namespace: op4-kube-frontend
 spec:
+  selector:    
+    app: frontapp
   ports:
     - name: web
       port: 8080

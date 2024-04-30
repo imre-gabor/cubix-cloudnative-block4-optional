@@ -4,6 +4,8 @@ metadata:
   name: backend
   namespace: op4-kube-backend
 spec:
+  selector:    
+    app: backapp
   ports:
     - name: web
       port: 8080
