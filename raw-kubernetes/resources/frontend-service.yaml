@@ -7,6 +7,6 @@ spec:
   selector:    
     app: frontapp
   ports:
-    - name: web
+    - protocol: TCP
       port: 8080
       targetPort: web
